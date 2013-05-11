@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>i18next</artifactId>
-    <version>1.6.2-SNAPSHOT</version>
+    <version>1.6.2</version>
     <name>i18next</name>
     <description>WebJar for i18next</description>
     <url>http://webjars.org</url>
@@ -36,7 +36,7 @@
         <url>http://github.com/webjars/i18next</url>
         <connection>scm:git:https://github.com/webjars/i18next.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/i18next.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>i18next-1.6.2</tag>
     </scm>
     
     <dependencies>
@@ -87,10 +87,10 @@
                                 <echo message="unzip archive" />
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
-                                <move file="${project.build.directory}/i18next-${upstream.version}/release/i18next-${upstream.version}.js" tofile="${destDir}/i18next.js"/>
-                                <move file="${project.build.directory}/i18next-${upstream.version}/release/i18next-${upstream.version}.min.js" tofile="${destDir}/i18next.min.js"/>
-                                <move file="${project.build.directory}/i18next-${upstream.version}/release/i18next.amd.withJQuery-${upstream.version}.js" tofile="${destDir}/i18next.amd.withJQuery.js"/>
-                                <move file="${project.build.directory}/i18next-${upstream.version}/release/i18next.amd.withJQuery-${upstream.version}.min.js" tofile="${destDir}/i18next.amd.withJQuery.min.js"/>
+                                <move file="${project.build.directory}/i18next-${upstream.version}/release/i18next-${upstream.version}.js" tofile="${destDir}/i18next.js" />
+                                <move file="${project.build.directory}/i18next-${upstream.version}/release/i18next-${upstream.version}.min.js" tofile="${destDir}/i18next.min.js" />
+                                <move file="${project.build.directory}/i18next-${upstream.version}/release/i18next.amd.withJQuery-${upstream.version}.js" tofile="${destDir}/i18next.amd.withJQuery.js" />
+                                <move file="${project.build.directory}/i18next-${upstream.version}/release/i18next.amd.withJQuery-${upstream.version}.min.js" tofile="${destDir}/i18next.amd.withJQuery.min.js" />
                             </target>
                         </configuration>
                     </execution>
